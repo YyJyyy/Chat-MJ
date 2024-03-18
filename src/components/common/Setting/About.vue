@@ -89,7 +89,7 @@ const  isShow = computed(()=>{
         <p v-html="$t('mj.infoStar')"></p>
       </div>
       <p>{{ $t("setting.api") }}：{{ config?.apiModel ?? '-' }}</p>
-      <p v-if="isChatGPTAPI" class=" flex items-center justify-between">
+      <!-- <p v-if="isChatGPTAPI" class=" flex items-center justify-between">
         <div>
         {{ $t("setting.monthlyUsage") }}：{{ config?.usage ?? '-' }}
         </div>
@@ -99,7 +99,7 @@ const  isShow = computed(()=>{
         <div>
         {{ $t("setting.balance") }}：{{ config?.remaining ?? '-' }}
         </div>
-      </p>
+      </p> -->
       <p v-if="!isChatGPTAPI">
         {{ $t("setting.reverseProxy") }}：{{ config?.reverseProxy ?? '-' }}
       </p>
